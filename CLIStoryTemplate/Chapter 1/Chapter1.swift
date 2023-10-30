@@ -10,4 +10,6 @@ func chapterOne() {
     
     print("test")
     print("giutbranch")
+    
+    print("This is very confusing and its hurting my brain!")
 }
