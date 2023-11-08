@@ -67,15 +67,15 @@ func chapterOne() {
 
     //Optional to let the user choose what kind of food the main character will eat
      let foodAnswer = readLine()
-        //If they push 1, it will print the case for rawFruits
+        //Conditional for if they push 1, it will print the case for rawFruits
         if foodAnswer == "1" {
             chooseFood(food: .rawFruits)
         }
-        //If they push 2, it will print the case for rawVeggies
+        //Conditional for if they push 2, it will print the case for rawVeggies
         if foodAnswer == "2" {
             chooseFood(food: .rawVeggies)
         }
-        //If they push 3, it will print the case for meatSubsitites
+        //Conditional for if it will print the case for meatSubsitites
         if foodAnswer == "3" {
             chooseFood(food: .meatSubstitutes)
         }
