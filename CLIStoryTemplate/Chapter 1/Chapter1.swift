@@ -21,12 +21,12 @@ func chapterOne() {
     let chapters:[String] = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]
     let veganOptions = [ "fruits", "veggies", "meat substitutes"]
     
-    // Enum for the vegan foods she likes to eat
+    //Enum for the vegan foods she likes to eat
     enum Vegan {
         case rawFruits,rawVeggies,meatSubstitutes
     }
     
-    // Function to chose what vegan food she wants to eat, using the enum
+    //Function to chose what vegan food she wants to eat, using the enum
     func chooseFood (food:Vegan) {
         switch(food) {
         case .rawFruits:
@@ -38,21 +38,11 @@ func chapterOne() {
         }
     }
 
-    //Function to print the intro
-    func printIntro() {
-        print("Sometimes in life we make choices. A lot of choices are predetermined, while others are decided over time.  \(mainCharacter)'s story is one like many , where she mad.e bad decisions an decided to ultimately do whatever she wanted. Which in this case didn’t work out in her favor. Sit back and react to how Tasha rose to the top, while at her lowest and then did a deep dive into the tech world and found her true passion in the tech industry with the help of The Apple Developer Academy mentor turned lover.")
-    }
-
-    //Function to print Chapter 1
-    func printChapterOne() {
-        print("For starters, life was good for \(mainCharacter) up until she lost her dad. Once that happened, like all little girls, \(mainCharacter) felt a void at \(mainCharacterAge) that she could not shake. So instead of seeking proper help through counseling she fell down a whirlwind of entertaining  the worst guys. From the devastating series of dates from the underworld, she found \(mainCharacter2), who was the bottom of the barrel worst of the worst man to be paired with. They did nothing but blow through her \(inheritanceAmount)  with bad decisions, partying, and traveling all over the world. By the time she realized he would never be what she desired, she was down to her last \(whatsleftofInheritance). And ready to focus on herself and truly turn all of her pain into passion and purpose. As a kid \(mainCharacter) never really thought about a career or what she would do to make her own money. I guess she was just so accustomed to the silver spoon and getting whatever she wanted she never had time to focus on what she wanted or needed as a adult.So she decided to take a chance and finally figure out what was next for her and go network at Black tech Saturdays which was a weekly meet up for tech investors, start up, and venture capitalist in \(city). While there, she met \(mainCharacter3) who’s ready to elevate her life from the moment he saw her. As a vegan, \(mainCharacter)could never truly find  compatible man that was either a ally or part of the vegan movement.\(veganOptions[0]),\(veganOptions[1]), \(veganOptions[2])")
-    }
-
     //Optional to ask the user if they want to hear the intro
     if let answer = readLine() {
         
         //Conditional for if the user wants to hear the intro
-        if (answer == "yes") {
+        if (answer == "yes") { //If the user enters yes, the intro will print and chapter 1 will print
             if ((doYouWantToHearTheIntro) == true) {
                 printIntro() //Print the intro
                 printChapterOne() //Print chapter 1
@@ -60,7 +50,7 @@ func chapterOne() {
         }
     }
     
-    // Make a print statement that tells the user what they can choose from
+    //Make a print statement that tells the user what they can choose from
     print("Should she eat rawVeggies, rawFruits or meatSubsitutes?")
 
     //Array of strings that tell the user what number to push to select a type of vegan food
@@ -70,20 +60,35 @@ func chapterOne() {
         "press 3 if she should eat meatSubstitutes" // <--- this is a response
     ]
     
-    // Loop for the "responsesToChoseFrom" array and print every "response". "For" every "response" in "responsesToChoseFrom", print "response"
+    //Loop for the "responsesToChoseFrom" array and print every "response". "For" every "response" in "responsesToChoseFrom", print "response"
     for response in responsesToChoseFrom {
         print(response)
     }
-    
+
+    //Optional to let the user choose what kind of food the main character will eat
      let foodAnswer = readLine()
+        //If they push 1, it will print the case for rawFruits
         if foodAnswer == "1" {
             chooseFood(food: .rawFruits)
         }
+        //If they push 2, it will print the case for rawVeggies
         if foodAnswer == "2" {
             chooseFood(food: .rawVeggies)
         }
+        //If they push 3, it will print the case for meatSubsitites
         if foodAnswer == "3" {
             chooseFood(food: .meatSubstitutes)
         }
+    
+    //Function to print the intro
+    func printIntro() {
+        print("Sometimes in life we make choices. A lot of choices are predetermined, while others are decided over time.  \(mainCharacter)'s story is one like many , where she mad.e bad decisions an decided to ultimately do whatever she wanted. Which in this case didn’t work out in her favor. Sit back and react to how Tasha rose to the top, while at her lowest and then did a deep dive into the tech world and found her true passion in the tech industry with the help of The Apple Developer Academy mentor turned lover.")
     }
+
+    //Function to print Chapter 1
+    func printChapterOne() {
+        print("For starters, life was good for \(mainCharacter) up until she lost her dad. Once that happened, like all little girls, \(mainCharacter) felt a void at \(mainCharacterAge) that she could not shake. So instead of seeking proper help through counseling she fell down a whirlwind of entertaining  the worst guys. From the devastating series of dates from the underworld, she found \(mainCharacter2), who was the bottom of the barrel worst of the worst man to be paired with. They did nothing but blow through her \(inheritanceAmount)  with bad decisions, partying, and traveling all over the world. By the time she realized he would never be what she desired, she was down to her last \(whatsleftofInheritance). And ready to focus on herself and truly turn all of her pain into passion and purpose. As a kid \(mainCharacter) never really thought about a career or what she would do to make her own money. I guess she was just so accustomed to the silver spoon and getting whatever she wanted she never had time to focus on what she wanted or needed as a adult.So she decided to take a chance and finally figure out what was next for her and go network at Black tech Saturdays which was a weekly meet up for tech investors, start up, and venture capitalist in \(city). While there, she met \(mainCharacter3) who’s ready to elevate her life from the moment he saw her. As a vegan, \(mainCharacter)could never truly find  compatible man that was either a ally or part of the vegan movement.\(veganOptions[0]),\(veganOptions[1]), \(veganOptions[2])")
+    }
+}
+
 
