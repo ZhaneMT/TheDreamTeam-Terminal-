@@ -23,7 +23,7 @@ func userChoice(userRecap:String) {
     print("#################################################")
     
     if input == "Y" || input == "Yes" {
-        print("*Insert a recap and stuff*")
+        print("In an attempt to change her lifestyle, \(mainCharacter) decided to become vegan. This change was only a small change to her bigger goal of becoming a stronger woman.")
         print("                                                                                       ")
     } else {
         print ("Continue the story from here...")
