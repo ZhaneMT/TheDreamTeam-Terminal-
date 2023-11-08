@@ -1,20 +1,11 @@
 
-//
-//  Chapter4.swift
-//  CLIStoryTemplate
-//
-
 import Foundation
 
-
-let hisName = "Tim"
+let hisName = "Shawn"
 let herName = "Tina"
 let herNewGuy = "Ted"
 var doesSheStay: Bool = true
 let herExes = ["ex1": "carvaughntreigh", "ex2": "larondo", "ex3": "demarvelous"]
-
-
-
 
 func nameHerExes() {
     for ex in herExes {
@@ -39,9 +30,7 @@ func ifSheStays() {
 
 func ifSheDoesNotStay() {
     print("She immediatly decided to leave him and focus on her mental health and self care. This was a tough decision but she stuck with it.")
-    
     print("Next month, when \(person1.name) was on her way to get a smoothie and her toes did, she met a nice man named \(herNewGuy). He was a nice man that liked to pet puppies and help the elderly cross the street.")
-    
     print("\(person1.name) and \(herNewGuy) talked everyday for the next few months and developed a great relatoionship. Then one day when they were having lunch, she realized a valueable lesson....")
 }
 
