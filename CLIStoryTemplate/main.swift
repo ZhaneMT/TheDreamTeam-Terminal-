@@ -6,7 +6,6 @@
 import Foundation
 
 struct Person {
-
   var name = " "
   var age = 0
 }
@@ -31,7 +30,6 @@ func readStory() {
             if let lessonFunction = endOfStory[0] as? () -> Void {
                   lessonFunction()
               }
-            
         }
         if (hearValuableLesson == "no") {
             print(endOfStory[1])
