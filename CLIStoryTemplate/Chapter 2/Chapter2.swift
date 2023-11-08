@@ -1,6 +1,7 @@
 import Foundation
 
 func chapterTwo() {
+    //Variable for printing the current chapter
     let currentChapter = 2
     print("#################################################")
     print("\(currentChapter)")
