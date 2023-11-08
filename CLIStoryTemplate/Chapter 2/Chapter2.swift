@@ -1,5 +1,8 @@
 import Foundation
-
+//
+//
+//Rising Action: She loved people that were down low, she meets a hood guy that started to ask for money and run game on her. He came off as clean and professional, turns out he was a women beater and manipulator for money.
+let chapters:[String] = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]
 func chapterTwo() {
     //Variable for printing the current chapter
     let currentChapter = 2
